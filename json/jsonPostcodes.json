@@ -1,0 +1,52 @@
+{
+  "area": [
+    {
+      "key": "CF",
+      
+      "employees": 2536,
+      "turnover": 234534532,
+      "startupWeek": 2345,
+      "active_companies": 11465
+
+    },{
+      "key": "SA",
+      
+      "employees": 34523,
+      "turnover": 2346642,
+      "startupWeek": 152,
+      "active_companies": 3245
+    },{
+      "key": "DD",
+      
+      "employees": 34622,
+      "turnover": 246456,
+      "startupWeek": 265,
+      "active_companies": 326423
+    },{
+      "key": "LL",
+      
+      "employees": 43653,
+      "turnover": 345722324,
+      "startupWeek": 345,
+      "active_companies": 235665
+    },{
+      "key": "G",
+      
+      "employees": 22665,
+      "turnover": 73565367,
+      "startupWeek": 214,
+      "active_companies": 74686
+    }
+      
+  ],
+    
+    
+    
+    
+    
+  "obj": {
+    "number": 1.2345e-6,
+    "enabled": true
+  },
+  "message": "Postcode data counts."
+}

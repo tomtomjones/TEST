@@ -1,0 +1,210 @@
+
+*{
+    
+}
+
+
+html {
+  overflow-y: scroll;
+}
+
+
+/* Appears in BespokeLive.html  */
+#right-header { 
+    float:right;
+    max-width: 70%;
+    max-height: 70px;
+    margin-top: 20px;
+    padding-right: 5%;
+/*    overflow-x:scroll;*/
+    overflow-x: hidden;
+    overflow-y:hidden;    
+    white-space: nowrap;
+    cursor: pointer;
+    
+
+}
+
+.back {
+    background-color: #182C42;
+}
+
+
+.well {
+    background-color: #4077B5;
+    color:floralwhite;
+}
+
+
+
+
+
+.sub-heading {
+    font-weight: 100;
+    text-align: center;
+    color: #333;
+    padding: 0;
+/*    background: #ef2a24;*/
+/*    max-height: 25px;*/
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+
+#postcode-container{
+    
+    border:1px solid;
+    max-height: 85px;
+    overflow-y:scroll;
+    cursor: default;
+    
+}
+#postcode-container span{
+    
+    padding: 4px 4px 0px 10px;
+    display: inline-block;
+    width: 25px;
+    cursor: pointer;
+    
+}
+      
+#area-container{
+    margin:0px;
+    padding:0px;
+}
+
+
+
+#json-tables{
+    visibility: hidden;
+}
+
+
+
+/*
+
+article {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+#jsonComboContainer {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+  padding: 1rem;
+  height: 100%;
+}
+
+#jsonComboLeft {
+  background: #ff9e2c;
+  width: 50%;
+    height: 100%;
+}
+
+#jsonComboRight {
+  background: #b6701e;
+  width: 50%;
+    height: 100%;
+}
+*/
+
+/*
+section, div {
+  height: 100%;
+}
+*/
+
+#jsonComboContainer div {
+    height: 100%;
+}
+
+#jsonComboContainer {
+  width: 100%;
+  height: 100%;
+}
+
+/*
+#jsonComboContainer.sub-heading {
+    font-weight: 100;
+    text-align: center;
+    color: #333;
+    padding: 0;
+    background: #ef2a24;
+    max-height: 25px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+*/
+
+article {
+  position: relative;
+/*  top: 50%;*/
+/*  left: 50%;*/
+  padding: 0.5rem;
+  text-align: center;
+/*  transform: translate(-50%, 0%);*/
+}
+
+
+
+/* Pattern styles */
+.jsonComboLeft {
+/*  background-color: #ff9e2c;*/
+  float: left;
+  width: 50%;
+}
+.jsonComboRight {
+/*  background-color: #b6701e;*/
+  float: left;
+  width: 50%;
+}
+
+
+#accordion {
+    margin: auto;
+}
+
+
+
+
+
+/*This sets the max and min font size. font doesnt go too big when it's on a wide screen, and not too small with minimum size
+*/
+
+@media all and (min-width: 900px) {
+#right-header{
+   font-size: 60px;  /*wont go any bigger than this*/
+  }
+}
+
+@media all and (max-width: 899px) and (min-width: 350px) {
+#right-header{
+    font-size: 7vw;
+  }
+}
+
+
+@media all and (max-width: 349px) and (min-width: 50px) {
+#right-header{
+    font-size: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

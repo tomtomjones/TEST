@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <title>Creditsafe</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/BespokeLogging.css">
+    <script src="js/javascript.js"></script>
+
+    
+ 
+        <!--[if lte IE 8]>
+            <link rel="stylesheet" href="css/layouts/side-menu-old-ie.css">
+        <![endif]-->
+        <!--[if gt IE 8]><!-->
+            <link rel="stylesheet" href="css/layouts/side-menu.css">
+        <!--<![endif]-->
+    
+
+    
+
+    
+</head>
+<body>
+
+
+
+
+
+
+<div id="layout">
+    <!-- Menu toggle -->
+    <a href="#menu" id="menuLink" class="menu-link">
+        <!-- Hamburger icon -->
+        <span></span>
+    </a>
+
+    <div id="menu">
+        <div class="pure-menu">
+            <a class="pure-menu-heading" href="#"><img style="width: 100%; height: 100%;"src="img/logoMenu.png" /></a>
+                
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Home</a></li>
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Bespoke Logs</a></li>
+
+                <li class="pure-menu-item" class="menu-item-divided pure-menu-selected">
+                    <a href="#" class="pure-menu-link">Bespoke Live</a>
+                </li>
+
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    
+    
+    
+
+    <div id="main">
+        <div class="header">
+            
+            <h1>Data Counts</h1>    
+            <div id ="right-header"></div>
+            <br style="clear:both;"/>
+                   
+            
+        </div>    
+
+        
+        <div class="content">
+            
+            <p>Select Postcode : </p>
+            <div id="postcode-container">
+<!--
+                <span class='PC'>CF</span> 
+                <span class='PC'>SA</span> 
+                <span>NP</span> 
+                <span>WA</span> 
+                <span class='PC'>LL</span> 
+                <span class='PC'>DD</span> 
+                <span>DA</span> 
+                <span>SW</span> 
+                <span>S</span> 
+                <span>L</span> 
+                <span>M</span> 
+                <span class='PC'>G</span> 
+                <span>N</span> 
+                <span>LE</span> 
+                <span>NF</span> 
+                <span>FC</span> 
+                <span>DS</span> 
+                <span>SD</span> 
+                <span>PO</span> 
+                <span>PR</span>
+-->             
+                <span class='PC'>AB</span>
+                <span class='PC'>AL</span>
+                <span class='PC'>B</span>
+                <span class='PC'>BA</span>
+                <span class='PC'>BB</span>
+                <span class='PC'>BD</span>
+                <span class='PC'>BH</span>
+                <span class='PC'>BL</span>
+                <span class='PC'>BN</span>
+                <span class='PC'>BR</span>
+                <span class='PC'>BS</span>
+                <span class='PC'>CA</span>
+                <span class='PC'>CB</span>
+                <span class='PC'>CF</span>
+                <span class='PC'>CH</span>
+                <span class='PC'>CM</span>
+                <span class='PC'>CO</span>
+                <span class='PC'>CR</span>
+                <span class='PC'>CT</span>
+                <span class='PC'>CV</span>
+                <span class='PC'>CW</span>
+                <span class='PC'>DA</span>
+                <span class='PC'>DD</span>
+                <span class='PC'>DE</span>
+                <span class='PC'>DG</span>
+                <span class='PC'>DH</span>
+                <span class='PC'>DL</span>
+                <span class='PC'>DN</span>
+                <span class='PC'>DT</span>
+                <span class='PC'>DY</span>
+                <span class='PC'>E</span>
+                <span class='PC'>EC</span>
+                <span class='PC'>EH</span>
+                <span class='PC'>EN</span>
+                <span class='PC'>EX</span>
+                <span class='PC'>FK</span>
+                <span class='PC'>FY</span>
+                <span class='PC'>G</span>
+                <span class='PC'>GL</span>
+                <span class='PC'>GU</span>
+                <span class='PC'>HA</span>
+                <span class='PC'>HD</span>
+                <span class='PC'>HG</span>
+                <span class='PC'>HP</span>
+                <span class='PC'>HR</span>
+                <span class='PC'>HS</span>
+                <span class='PC'>HU</span>
+                <span class='PC'>HX</span>
+                <span class='PC'>IG</span>
+                <span class='PC'>IP</span>
+                <span class='PC'>IV</span>
+                <span class='PC'>KA</span>
+                <span class='PC'>KT</span>
+                <span class='PC'>KW</span>
+                <span class='PC'>KY</span>
+                <span class='PC'>L</span>
+                <span class='PC'>LA</span>
+                <span class='PC'>LD</span>
+                <span class='PC'>LE</span>
+                <span class='PC'>LL</span>
+                <span class='PC'>LN</span>
+                <span class='PC'>LS</span>
+                <span class='PC'>LU</span>
+                <span class='PC'>M</span>
+                <span class='PC'>ME</span>
+                <span class='PC'>MK</span>
+                <span class='PC'>ML</span>
+                <span class='PC'>N</span>
+                <span class='PC'>NE</span>
+                <span class='PC'>NG</span>
+                <span class='PC'>NN</span>
+                <span class='PC'>NP</span>
+                <span class='PC'>NR</span>
+                <span class='PC'>NW</span>
+                <span class='PC'>OL</span>
+                <span class='PC'>OX</span>
+                <span class='PC'>PA</span>
+                <span class='PC'>PE</span>
+                <span class='PC'>PH</span>
+                <span class='PC'>PL</span>
+                <span class='PC'>PO</span>
+                <span class='PC'>PR</span>
+                <span class='PC'>RG</span>
+                <span class='PC'>RH</span>
+                <span class='PC'>RM</span>
+                <span class='PC'>S</span>
+                <span class='PC'>SA</span>
+                <span class='PC'>SE</span>
+                <span class='PC'>SG</span>
+                <span class='PC'>SK</span>
+                <span class='PC'>SL</span>
+                <span class='PC'>SM</span>
+                <span class='PC'>SN</span>
+                <span class='PC'>SO</span>
+                <span class='PC'>SP</span>
+                <span class='PC'>SR</span>
+                <span class='PC'>SS</span>
+                <span class='PC'>ST</span>
+                <span class='PC'>SW</span>
+                <span class='PC'>SY</span>
+                <span class='PC'>TA</span>
+                <span class='PC'>TD</span>
+                <span class='PC'>TF</span>
+                <span class='PC'>TN</span>
+                <span class='PC'>TQ</span>
+                <span class='PC'>TR</span>
+                <span class='PC'>TS</span>
+                <span class='PC'>TW</span>
+                <span class='PC'>UB</span>
+                <span class='PC'>W</span>
+                <span class='PC'>WA</span>
+                <span class='PC'>WC</span>
+                <span class='PC'>WD</span>
+                <span class='PC'>WF</span>
+                <span class='PC'>WN</span>
+                <span class='PC'>WR</span>
+                <span class='PC'>WS</span>
+                <span class='PC'>WV</span>
+                <span class='PC'>YO</span>
+                <span class='PC'>ZE</span>
+
+                
+                
+                
+                
+                
+                
+            </div>
+            
+            <p>Select Area : </p>
+            <div id="area-container">
+            
+            <button id="test">GO</button>
+            <button id="btnClear">CLEAR</button>
+            </div>
+            
+            
+            <br />
+            <br />
+            
+            
+            
+            <div id="jsonComboContainer">   
+                <div class="sub-heading"><h3>Figures Available</h3></div>
+                <div class="jsonComboLeft">
+                    <article>
+                    EMPLOYEES
+                    <br/><span id="disEmployees"></span>
+                    </article>
+                </div>
+                
+                <div class="jsonComboRight">
+                    <article>
+                    TURNOVER
+                    <br/><span id="disTurnover"></span>
+                    </article>
+                </div>               
+                <div class="jsonComboLeft">
+                    <article>
+                    TELEPHONE
+                        <br/><span id="disTel"></span>
+                    </article>
+                </div>
+                
+                <div class="jsonComboRight">
+                    <article>
+                    TEL.Off TPS
+                        <br/><span id="disTelTps"></span>
+                    </article>
+                </div> 
+                
+                <div class="jsonComboLeft">
+                    <article>
+                    #ACTIVE
+                        <br/><span id="disActive"></span>
+                    </article>
+
+                </div>
+                
+                <div class="jsonComboRight">
+                    <article>
+                        <br/>
+                        <br/><span id="disActive"></span>
+                    </article>
+                </div>             
+
+                
+                <div class="sub-heading"><h3>Past Week</h3></div>
+                
+                <div class="jsonComboLeft">
+                    <article>
+                    BAD DEBT
+                        <br/><span id="disBadDebt"></span>
+                    </article>
+                    
+                </div>
+                
+                <div class="jsonComboRight">
+                    <article>
+                    BAD DEBT VALUE
+                        <br/><span id="disBadDebtVal"></span>
+                    </article>
+                </div>   
+                <div class="jsonComboLeft">
+                    <article>
+                    #CCJ
+                        <br/><span id="disCcj"></span>
+                    </article>
+                </div>
+                
+                <div class="jsonComboRight">
+                    <article>
+                    CCJ VALUE
+                        <br/><span id="disCcjVal"></span>
+                    </article>
+                </div> 
+                <div class="jsonComboLeft">
+                    <article>
+                    START-UPS
+                        <br/><span id="disStartups"></span>
+                    </article>
+                </div>
+                
+                <div class="jsonComboRight">
+                    <article>
+                    INSOLVENCIES
+                        <br/><span id="disInsolvency"></span>
+                    </article>
+                </div>                  
+            
+                
+                
+                <div class="sub-heading" ><h3>Past Month</h3></div>
+                
+                <div class="jsonComboLeft">
+                    <article>
+                    BAD DEBT
+                        <br/><span id="disBadDebtMonth"></span>
+                    </article>
+                    
+                </div>
+                
+                <div class="jsonComboRight">
+                    <article>
+                    BAD DEBT VALUE
+                        <br/><span id="disBadDebtValMonth"></span>
+                    </article>
+                </div>   
+                <div class="jsonComboLeft">
+                    <article>
+                    #CCJ
+                        <br/><span id="disCcjMonth"></span>
+                    </article>
+                </div>
+                
+                <div class="jsonComboRight">
+                    <article>
+                    CCJ VALUE
+                        <br/><span id="disCcjValMonth"></span>
+                    </article>
+                </div> 
+                <div class="jsonComboLeft">
+                    <article>
+                    START-UPS
+                        <br/><span id="disStartupsMonth"></span>
+                    </article>
+                </div>
+                
+                <div class="jsonComboRight">
+                    <article>
+                    INSOLVENCIES
+                        <br/><span id="disInsolvencyMonth"></span>
+                    </article>
+                </div>                  
+            </div>            
+            
+            
+            
+            
+            </div>
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            <div id="json-tables">
+            
+                <table id="json-output">
+                    <tr>
+                        <th>Employees</th>
+                        <th>Turnover</th>
+                        <th>Startup</th>
+                        <th>Active</th>
+                    </tr>
+
+                </table>
+            
+            </div>
+            
+            
+            <br />
+
+            
+            
+            
+        </div> <!--end of content div-->
+        
+        
+    </div>
+</div>
+
+
+<!--Needs to be kept at the bottom of the script-->
+<script src="js/ui.js"></script>   
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
